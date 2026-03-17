@@ -1,7 +1,5 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
-from importlib.metadata import pass_none
-
 import pygame
 
 from code.Menu import Menu

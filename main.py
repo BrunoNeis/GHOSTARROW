@@ -1,4 +1,4 @@
-from code.game import Game
+from code.Game import Game
 
 #call Class Game
 
