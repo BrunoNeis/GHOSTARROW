@@ -1,4 +1,13 @@
-WIN_WIDTH = 1200
+#Color
+COLOR_BLACK = (0,0,0)
+COLOR_RED = (255,0,0)
+
+#M
+MENU_OPTION =("NEW GAME", "SCORE","EXIT")
+
+
+# Screen
+WIN_WIDTH = 1000
 WIN_HEIGHT = 400
 
 
