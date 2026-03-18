@@ -16,14 +16,9 @@ class Menu:
         while True:
             self.window.blit(source=self.surf, dest=self.rect)
             pygame.display.flip()
-        pass
 
-        for event in pygame.event.get():
-         if event.type == pygame.QUIT:
-               pygame.quit()  # close Window
-               quit()  # end pygame.
+            for event in pygame.event.get():
+                if event.type == pygame.QUIT:
+                    pygame.quit()  # close Window
+                    quit()  # end pygame.
 
-
-
-
-        pass
