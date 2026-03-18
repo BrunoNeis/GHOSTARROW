@@ -11,10 +11,11 @@ class Menu:
         self.rect = self.surf.get_rect(left = 0, top=0 )
 
     def run(self,):
-        pygame.mixer_music.load("./asset/grim.mp3")
-
-        self.window.blit(source=self.surf, dest=self.rect)
-        pygame.display.flip()
+        pygame.mixer_music.load("./asset/grimghosts.mp3")
+        pygame.mixer_music.play(-1)
+        while True:
+            self.window.blit(source=self.surf, dest=self.rect)
+            pygame.display.flip()
         pass
 
         for event in pygame.event.get():
