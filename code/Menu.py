@@ -2,6 +2,7 @@
 # -*- coding: utf-8 -*-
 from pydoc_data.topics import topics
 import pygame
+from pygame.font import Font
 from pygame.rect import Rect
 from pygame.surface import Surface
 
@@ -47,7 +48,6 @@ class Menu:
                             menu_option = len(MENU_OPTION) - 1
                     if event.key == pygame.K_RETURN: #ENTER
                         return MENU_OPTION[menu_option]
-
 
 
 
