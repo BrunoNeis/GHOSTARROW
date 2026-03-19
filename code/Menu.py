@@ -26,9 +26,9 @@ class Menu:
 
             for i in range(len(MENU_OPTION)):
                if i== menu_option:
-                   self.menu_text(50, MENU_OPTION[i], text_color=(COLOR_YELLOW), text_center_pos=(300 + 200 * i, 350))
+                   self.menu_text(50, MENU_OPTION[i], text_color=(COLOR_YELLOW), text_center_pos=(200 + 200 * i, 350))
                else:
-                self.menu_text(50, MENU_OPTION[i], text_color=(COLOR_RED),text_center_pos=(300 + 200 * i, 350))
+                self.menu_text(50, MENU_OPTION[i], text_color=(COLOR_RED),text_center_pos=(200 + 200 * i, 350))
             pygame.display.flip()
 
             for event in pygame.event.get():
@@ -48,8 +48,6 @@ class Menu:
                             menu_option = len(MENU_OPTION) - 1
                     if event.key == pygame.K_RETURN: #ENTER
                         return MENU_OPTION[menu_option]
-
-
 
 #text menu
     def menu_text(self,text_size:int, text: str, text_color: tuple , text_center_pos:tuple):
