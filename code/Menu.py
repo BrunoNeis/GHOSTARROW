@@ -22,7 +22,7 @@ class Menu:
         while True:
             # DRAW IMAGES
             self.window.blit(source=self.surf, dest=self.rect)
-            self.menu_text(150, text="GHOST ARROW",  text_color=(C_BLACK), text_center_pos=((WIN_WIDTH/2),200))
+            self.menu_text(150, text="GHOST ARROW",text_color=(C_BLACK), text_center_pos=((WIN_WIDTH/2),200))
 
             for i in range(len(MENU_OPTION)):
                if i== menu_option:
