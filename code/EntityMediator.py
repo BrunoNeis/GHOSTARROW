@@ -3,8 +3,11 @@
 from abc import ABC,abstractmethod
 import pygame.image
 
+from code.Const import WIN_WIDTH
 from code.Entity import Entity
 from code.Ghost import Ghost
+from code.GhostShot import GhostShot
+from code.PlayerShot import PlayerShot
 
 
 class EntityMediator:
@@ -15,6 +18,14 @@ class EntityMediator:
         if isinstance(ent, Ghost):
             if ent.rect.right <0:
                 ent.health = 0
+            #healf th shoot
+        if isinstance(ent, PlayerShot):
+            if ent.rect.left >= WIN_WIDTH:
+                ent.health = 0
+        if isinstance(ent, GhostShot):
+            if ent.rect.right <= 0:
+                ent.health = 0
+
 
 
     @staticmethod

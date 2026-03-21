@@ -17,10 +17,15 @@ ENTITY_SPEED= {
     'Level1Bg3': 0,
     'Level1Bg4': 1,
     'Player1': 3,
+    "Player1Shot":1,
     'Player2': 3,
+    "Player2Shot":1,
     "Ghost1":2,
-    "Ghost2":2,
+    "Ghost1Shot":4,
+    "Ghost2":1,
+    "Ghost2Shot":3,
     "Ghost3":1,
+    "Ghost3Shot":2,
 
 }
 
@@ -46,9 +51,9 @@ ENTITY_HEALTH= {
     'Level4Bg3': 999,
     'Level4Bg4': 999,
     'Player1':400,
-    "Player1Shot":1,
+    "Player1Shot":3,
     'Player2':400,
-    "Player2Shot":1,
+    "Player2Shot":3,
     'Ghost1':20,
     'Ghost1Shot':1,
     'Ghost2':30,
@@ -57,7 +62,14 @@ ENTITY_HEALTH= {
     'Ghost3Shot':3,
 
 }
+ENTITY_SHOT_DELAY={
+        'Player1':20,
+        "Player2":20,
+        'Ghost1':80,
+        'Ghost2':120,
+        'Ghost3':180,
 
+}
 
 
 
