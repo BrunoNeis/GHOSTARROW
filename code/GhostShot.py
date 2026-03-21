@@ -24,39 +24,7 @@ ENTITY_SPEED= {
 
 }
 
-ENTITY_HEALTH= {
-    'Level1Bg0': 999,
-    'Level1Bg1': 999,
-    'Level1Bg2': 999,
-    'Level1Bg3': 999,
-    'Level1Bg4': 999,
-    'Level2Bg0': 999,
-    'Level2Bg1': 999,
-    'Level2Bg2': 999,
-    'Level2Bg3': 999,
-    'Level2Bg4': 999,
-    'Level3Bg0': 999,
-    'Level3Bg1': 999,
-    'Level3Bg2': 999,
-    'Level3Bg3': 999,
-    'Level3Bg4': 999,
-    'Level4Bg0': 999,
-    'Level4Bg1': 999,
-    'Level4Bg2': 999,
-    'Level4Bg3': 999,
-    'Level4Bg4': 999,
-    'Player1':400,
-    "Player1Shot":1,
-    'Player2':400,
-    "Player2Shot":1,
-    'Ghost1':20,
-    'Ghost1Shot':1,
-    'Ghost2':30,
-    'Ghost2Shot':2,
-    'Ghost3':50,
-    'Ghost3Shot':3,
-
-}
+#K
 
 
 
