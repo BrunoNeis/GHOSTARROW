@@ -25,6 +25,8 @@ class EntityMediator:
 
     @staticmethod
     def __verify_collision_entity(ent1, ent2):
+
+
         valid_interaction = False
         if isinstance(ent1, Ghost) and isinstance(ent2, PlayerShot):
            valid_interaction = True

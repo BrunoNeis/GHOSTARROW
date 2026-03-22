@@ -6,7 +6,7 @@ from pygame.font import Font
 from pygame.rect import Rect
 from pygame.surface import Surface
 
-from code.Const import WIN_WIDTH, C_BLACK, MENU_OPTION, C_RED, C_YELLOW
+from code.Const import WIN_WIDTH, C_BLACK, MENU_OPTION, C_RED, C_YELLOW, C_ORANGE
 
 
 class Menu:
@@ -24,12 +24,15 @@ class Menu:
             # DRAW IMAGES
             self.window.blit(source=self.surf, dest=self.rect)
             self.menu_text(150, text="GHOST ARROW",text_color=(C_BLACK), text_center_pos=((WIN_WIDTH/2),200))
-
+            self.menu_text(30, text="Player1:Movement with Up,Left,Down,Right. Shot- CRTL Right.",
+                           text_color=(C_ORANGE),text_center_pos=((WIN_WIDTH/2),450))
+            self.menu_text(30, text="Player2:Movement with W,A,S,D  Shot-CTRL Left.",
+                           text_color=(C_ORANGE), text_center_pos=((WIN_WIDTH/2),500))
             for i in range(len(MENU_OPTION)):
                if i== menu_option:
-                   self.menu_text(50, MENU_OPTION[i], text_color=(C_YELLOW), text_center_pos=(200 + 200 * i, 350))
+                   self.menu_text(50, MENU_OPTION[i], text_color=(C_YELLOW),text_center_pos=(200 + 200*i,350))
                else:
-                self.menu_text(50, MENU_OPTION[i], text_color=(C_RED),text_center_pos=(200 + 200 * i, 350))
+                self.menu_text(50, MENU_OPTION[i], text_color=(C_RED),text_center_pos=(200 + 200 * i,350))
             pygame.display.flip()
 
             for event in pygame.event.get():
