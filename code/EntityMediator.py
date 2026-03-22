@@ -61,8 +61,6 @@ class EntityMediator:
                     ent.score += ghost.score
 
 
-
-
     @staticmethod
     def verify_collision(entity_list: list[Entity]):
        for i  in range(len(entity_list)):

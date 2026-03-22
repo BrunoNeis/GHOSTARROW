@@ -83,6 +83,7 @@ class Level:
 
 
 
+
             #printed text
             self.level_text(35, f'{self.name}- Timeout: {self.timeout / 1000:.1f}s', C_RED,(WIN_WIDTH/3,10))
             self.level_text(15, f'fps:{clock.get_fps():.0f}',C_RED, (10,WIN_HEIGHT - 35))
