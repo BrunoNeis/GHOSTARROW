@@ -1,11 +1,4 @@
-asset/Player1.png  # GHOST ARROW #  asset/Player1.png
-
-
-
-
-
-
-
+# GHOST ARROW # 
 
 #### About 
 GHOSt ARROW is a 2D arcade game develoaped in Pygame. The game has 4  level and each level and eith a time event.
