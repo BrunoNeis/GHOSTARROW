@@ -13,6 +13,7 @@ from code.Const import C_RED, WIN_HEIGHT, MENU_OPTION, EVENT_GHOST, SPAW_TIME, W
 from code.Entity import Entity
 from code.EntityFactory import EntityFactory
 from code.EntityMediator import EntityMediator
+from code.GameOver import GameOver
 from code.Ghost import Ghost
 from code.Player import Player
 
@@ -79,7 +80,8 @@ class Level:
                         found_player = True
 
                 if not found_player:
-                        return False
+                       gameover = GameOver(self.window)
+                       return gameover.show()
 
 
 

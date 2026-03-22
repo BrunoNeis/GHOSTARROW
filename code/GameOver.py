@@ -6,6 +6,8 @@ from pygame.font import Font
 from pygame.rect import Rect
 from pygame.surface import Surface
 
+from code.Const import WIN_WIDTH, WIN_HEIGHT, C_RED, C_ORANGE
+
 
 class GameOver:
     def __init__(self,window):
@@ -15,25 +17,21 @@ class GameOver:
         pass
 
 
-    def show_gameover(self):
+    def show(self):
         pygame.mixer_music.load("./asset/GameOver.mp3")
         pygame.mixer_music.play(-1)
         self.window.blit(source=self.surf, dest=self.rect)
+        self.gameover_text(100, 'GAME OVER LOSER !!!! ', C_RED,  (WIN_WIDTH/2,WIN_HEIGHT/2))
+        self.gameover_text(50, ' TRAY AGAN', C_ORANGE, (WIN_WIDTH/2,WIN_HEIGHT/2+100))
         while True:
             pygame.display.flip()
             for event in pygame.event.get():
                 if event.type == pygame.QUIT:
                     pygame.quit()
                     sys.exit()
-            for event in pygame.event.get():
-                if event.type == pygame.QUIT:
-                    pygame.quit()
-                    sys.exit()
-                if event.type == KEYDOWN:
-                    if event.key == K_ESCAPE:
-                        return
+                elif event.type == KEYDOWN:
+                     return
             pygame.display.flip()
-
 
 
     def gameover_text(self,text_size:int, text: str, text_color: tuple , text_center_pos:tuple):
