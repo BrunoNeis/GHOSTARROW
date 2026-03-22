@@ -10,7 +10,7 @@ C_BLUE = (8,155,189)
 
 #E
 EVENT_GHOST= pygame.USEREVENT + 1
-
+EVENT_TIMEOUT= pygame.USEREVENT + 2
 ENTITY_DAMAGE = {
     'Level1Bg0': 0,
     'Level1Bg1': 0,
@@ -82,6 +82,21 @@ ENTITY_SPEED= {
     'Level1Bg2': 1,
     'Level1Bg3': 0,
     'Level1Bg4': 1,
+    'Level2Bg0': 0,
+    'Level2Bg1': 2,
+    'Level2Bg2': 1,
+    'Level2Bg3': 0,
+    'Level2Bg4': 1,
+    'Level3Bg0': 0,
+    'Level3Bg1': 2,
+    'Level3Bg2': 1,
+    'Level3Bg3': 0,
+    'Level3Bg4': 1,
+    'Level4Bg0': 0,
+    'Level4Bg1': 2,
+    'Level4Bg2': 1,
+    'Level4Bg3': 0,
+    'Level4Bg4': 1,
     'Player1': 4,
     "Player1Shot":5,
     'Player2': 4,
@@ -154,8 +169,11 @@ PLAYER_KEY_RIGHT = {'Player1':pygame.K_RIGHT,
 PLAYER_KEY_SHOOT = {'Player1':pygame.K_RCTRL,
                  'Player2':pygame.K_LCTRL}
 #S
-SPAW_TIME= 4000
+SPAW_TIME= 1000
 
+#T
+TIMEOUT_STEP= 100 #100Ms
+TIMEOUT_LEVEL = 30000 #30s
 
 # W   - Screen
 WIN_WIDTH = 1000
