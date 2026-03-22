@@ -11,7 +11,6 @@ from code.PlayerShot import PlayerShot
 
 class EntityMediator:
 
-
     @staticmethod
     def __verify_collision_window(ent:Entity):
         if isinstance(ent, Ghost):
@@ -51,6 +50,10 @@ class EntityMediator:
 
     @staticmethod
     def __give_score(ghost: Ghost, entity_list: list[Entity]):
+        if ghost.health <= 0:
+           sound_dead = pygame.mixer.Sound("./asset/Ghostdead.mp3")
+           sound_dead.play()
+
         if ghost.last_dmg == 'Player1Shot':
             for ent in entity_list:
                 if ent.name == 'Player1':
